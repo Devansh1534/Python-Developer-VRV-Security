@@ -1,0 +1,82 @@
+
+<html>
+  <head>
+    <title>Log Analysis Report</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      h1, h2 {
+        text-align: center;
+        color: #0047ab;
+      }
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+      }
+      th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 10px;
+      }
+      th {
+        background-color: #0047ab;
+        color: white;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Log Analysis Report</h1>
+    <h2>Requests Per IP</h2>
+    <table>
+      <tr>
+        <th>IP Address</th>
+        <th>Request Count</th>
+      </tr>
+      <tr><td>203.0.113.5</td><td>9</td></tr>
+      <tr><td>198.51.100.23</td><td>8</td></tr>
+      <tr><td>192.168.1.1</td><td>7</td></tr>
+      <tr><td>10.0.0.2</td><td>6</td></tr>
+      <tr><td>192.168.1.100</td><td>5</td></tr>
+      <tr><td>192.168.1.101</td><td>2</td></tr>
+      <tr><td>203.0.113.7</td><td>1</td></tr>
+      <tr><td>10.0.0.3</td><td>1</td></tr>
+      <tr><td>203.0.113.8</td><td>1</td></tr>
+      <tr><td>10.0.0.5</td><td>1</td></tr>
+      <tr><td>192.168.2.10</td><td>1</td></tr>
+      <tr><td>198.51.100.25</td><td>1</td></tr>
+
+    </table>
+    <h2>Most Frequently Accessed Endpoint</h2>
+    <p>/login (Accessed 16 times)</p>
+
+    <h2>Suspicious Activity Detected</h2>
+    <table>
+      <tr>
+        <th>IP Address</th>
+        <th>Failed Login Attempts</th>
+      </tr>
+      <tr><td>203.0.113.5</td><td>8</td></tr>
+
+    </table>
+  </body>
+</html>
